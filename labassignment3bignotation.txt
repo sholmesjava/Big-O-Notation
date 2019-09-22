@@ -1,0 +1,35 @@
+int Hanoi(int n) {			1
+	n;
+	for(n=0; n>=1; n++) {		n
+		printf("1");		1
+		for(n=0;n>1;n++) {	n
+			2*Hanoi(n-1)+1;	1
+		}
+	}
+		printf("0");		1
+}
+
+(O)Hanoi = 1 + n(1 + n(1)) + 1
+(O)Hanoi = 1 + n(1 + n) + 1
+(O)Hanoi = 1 + n2 + 1
+(O)Hanoi = 0 + n2 + 0
+(O)Hanoi = O(n2) 
+(O)Hanoi = Quadratic
+	
+int GCD(int x,int y) {			
+	x, y;				1 + 1
+	for(y=0;y<1;y--) {		n
+		printf("x");		1
+	for(x=0;x>=y;x--) {		n
+		GCD(y,x % y);		1	
+		}
+	}
+}
+
+(O)GCD = 1 + 1 + n(1 + n(1))
+(O)GCD = 2 + n(1 + n(1))
+(O)GCD = 2 + n(1 + n)
+(O)GCD = 2 + n2
+(O)GCD = 0 + n2
+(O)GCD = O(n2)
+(O)GCD = Quadratic
